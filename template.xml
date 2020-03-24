@@ -1,0 +1,25 @@
+<template format="4"
+		revision="1"
+		name="VIPER Kotlin"
+		description="Creates a new MVP classes - Presenter, View and Contract between the two">
+
+	<category value="Other"/>
+
+	<parameter id="className"
+		name="Module"
+		type="string"
+		constraints="class|nonempty"
+		default=""
+		help="The name of the functionality that requires MVP views"/>
+	
+	<parameter id="modelName"
+		name="Model"
+		type="string"
+		constraints="class|nonempty"
+		default=""
+		help="The name of the functionality that requires MVP views"/>
+
+	<globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
